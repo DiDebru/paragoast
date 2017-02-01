@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains paragoast.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function paragoast_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the paragoast module.
+    case 'help.page.paragoast':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Integrate Paragraphs into Yoast') . '</p>';
+      return $output;
+
+    default:
+  }
+}

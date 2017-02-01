@@ -1,0 +1,8 @@
+name: paragoast
+type: module
+description: Integrate Paragraphs into Yoast
+core: 8.x
+package: Custom
+dependencies:
+  - paragraphs
+  - yoast_seo

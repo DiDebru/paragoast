@@ -1,0 +1,5 @@
+services:
+  paragoast.integrate:
+    class: Drupal\paragoast\Paragoast
+    arguments: ['@entity_field.manager']
+
